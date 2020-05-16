@@ -1,0 +1,12 @@
+// Used to test local plugins
+pluginManagement {
+	repositories {
+		maven {
+			url "C:/Users/sassi/git/gradle-plugin-docker/build/test-maven-repo"
+		}
+		gradlePluginPortal()
+	}
+}
+
+// Root project name
+rootProject.name = "gradle-plugin-docker-tests"

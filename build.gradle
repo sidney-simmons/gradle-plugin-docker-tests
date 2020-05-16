@@ -1,0 +1,13 @@
+plugins {
+    id "com.sidneysimmons.gradle-plugin-external-properties" version "1.0.0"
+    id "com.sidneysimmons.gradle-plugin-docker" version "0.0.8"
+}
+
+docker {
+    environment("POSTGRES_USER", props.get("postgres.user"))
+    environment("POSTGRES_PASSWORD", props.get("postgres.password"))
+    scale("potato", 2)
+    scale("apple", 2)
+}
+
+dockerComposeUp.dependsOn dockerComposeBuild
