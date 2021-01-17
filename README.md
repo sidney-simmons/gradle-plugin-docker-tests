@@ -1,4 +1,6 @@
-# gradle-plugin-docker-tests
+# gradle-plugin-docker-tests (archived)
+
+*Archived and no longer in active development.*
 
 gradle-plugin-docker-tests is a gradle project meant for testing the [gradle-plugin-docker](https://github.com/sidney-simmons/gradle-plugin-docker) plugin.
 
